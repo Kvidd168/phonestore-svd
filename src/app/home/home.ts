@@ -3,6 +3,7 @@ import { Carousel } from '../carousel/carousel';
 import { ProductCard } from '../product-card/product-card';
 import { CartService } from '../services/cart-service';
 import { ProductService } from '../services/product-service';
+declare const Swal:any;
 
 
 @Component({
@@ -19,5 +20,14 @@ export class Home {
 
   addToCart(item:any): void{
     this.cartService.addToCart(item);
+
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "Add To Cart Success",
+      showConfirmButton: false,
+      timer: 800
+      
+    });
   }
 }
