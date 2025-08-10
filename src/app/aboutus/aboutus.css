@@ -1,0 +1,33 @@
+.about-header {
+    background: #007bff;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.icon-box {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.icon-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.2);
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #007bff;
+}

@@ -1,0 +1,68 @@
+.product-card {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Button Add To Cart Style */
+.btn-outline-primary {
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Price */
+.text-danger {
+    transition: transform 0.3s ease;
+}
+
+/* Badge animation */
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;  /* Higher z-index to appear above the image */
+    transition: all 0.3s ease;
+}
+
+.product-card:hover .text-danger {
+    transform: scale(1.1);
+}
+
+.product-card:hover .badge {
+    transform: rotate(-10deg) scale(1.1);
+}
+
+/* short title and Description */
+.card-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* Show 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Show 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-card .card-body {
+    padding: 1.5rem;
+}

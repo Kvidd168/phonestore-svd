@@ -1,0 +1,44 @@
+.text {
+  position: relative;
+  color: #333;
+  margin: 0 10px;
+  padding: 8px 0;
+  transition: color 0.3s ease;
+}
+
+.text::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+.text:hover {
+  color: #007bff;
+}
+
+.text:hover::after {
+  width: 100%;
+}
+
+.text-toggler {
+  border: none;
+  padding: 10px;
+}
+
+.text-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.text.active {
+  color: #007bff;
+}
+
+.text.active::after {
+  width: 100%;
+}
