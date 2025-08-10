@@ -21,13 +21,18 @@ export class Home {
   addToCart(item:any): void{
     this.cartService.addToCart(item);
 
-    Swal.fire({
+    const Toast = Swal.mixin({
+      toast: true,
+      width: 300,
+      grow: 'row',
       position: "top-end",
-      icon: "success",
-      title: "Add To Cart Success",
       showConfirmButton: false,
-      timer: 800
-      
+      timer: 1500,
+      timerProgressBar: true,
+    });
+    Toast.fire({
+      icon: "success",
+      title: "Add To Cart Success"
     });
   }
 }
