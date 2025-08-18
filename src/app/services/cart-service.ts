@@ -10,6 +10,7 @@ export class CartService {
     this.cart_list = JSON.parse(localStorage.getItem('cart_list') ?? '[]');
   }
 
+
   getCartList(): any[] {
     return this.cart_list;
   }
