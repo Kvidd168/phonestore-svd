@@ -2,6 +2,7 @@ import { Component} from '@angular/core';
 import { CartService } from '../services/cart-service';
 import { CurrencyPipe } from '@angular/common';
 
+
 @Component({
   selector: 'app-cart',
   imports: [ CurrencyPipe],
