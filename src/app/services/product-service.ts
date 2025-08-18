@@ -584,7 +584,6 @@ export class ProductService {
     fetch("https://fakestoreapi.in/api/products")
     .then(res => res.json())
     .then(res => console.log(res))
-
   }
 
   getProducts(): any[] {
