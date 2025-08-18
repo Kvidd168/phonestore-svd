@@ -2,9 +2,8 @@
     <div class="row m-3">
         <nav class="navbar navbar-expand-lg bg-body-white">
             <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <img src="https://t4.ftcdn.net/jpg/02/77/43/25/360_F_277432530_peLp2WAlSLVtwV3h4tzFG8BhvruFrPwW.jpg" width="100px" height="50px" class="d-inline-block align-text-top me-2">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -13,11 +12,10 @@
                             <a class="nav-link active" aria-current="page" routerLink="/">Homepage</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Products</a>
+                            <a routerLink = "/" class="nav-link">Products</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Categories
                             </a>
                             <ul class="dropdown-menu">
@@ -28,18 +26,17 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a routerLink="/aboutus" class="nav-link">About Us</a>
+                            <a routerLink = "/aboutus" class="nav-link">About Us</a>
                         </li>
                     </ul>
                     <form class="d-flex " role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <a routerLink="/cart" class="btn btn-outline-primary btn-cart">
-                            Cart
-                            <span
-                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                {{ cartService.getCartList().length }}
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                        <a routerLink = "/cart" class="btn btn-outline-primary btn-cart">
+                            Cart 
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    {{ cartService.getCartList().length }}
                             </span>
-                        </a>
+                        </a>                       
                     </form>
                 </div>
             </div>
@@ -48,9 +45,13 @@
 </div>
 
 <div class="container">
-    <router-outlet></router-outlet>
+    <router-outlet/>
 </div>
 
 <div class="container-fluid p-0 m-0">
     <app-footer></app-footer>
 </div>
+
+
+
+ 
