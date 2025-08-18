@@ -71,4 +71,8 @@ export class CartService {
     localStorage.removeItem('cart_list');
   }   
 
+  Checkout():void{
+    
+  }
+
 }

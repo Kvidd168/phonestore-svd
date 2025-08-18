@@ -580,10 +580,22 @@ export class ProductService {
     }
   ]
 
-  constructor() {
-    fetch("https://fakestoreapi.in/api/products")
-    .then(res => res.json())
-    .then(res => console.log(res))
+  constructor(){
+    let vm:this = this
+    let api_url:string = 'https://fakestoreapi.in/api/products'
+
+    axios.get(api_url)
+      .then(function (response:any):void {
+        // handle success
+        vm.products = response.data;
+      })
+      .catch(function (error:any):void {
+        // handle error
+        console.log(error);
+      })
+      .finally(function ():void {
+        // always executed
+      });
   }
 
   getProducts(): any[] {
